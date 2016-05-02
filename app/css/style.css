@@ -1,0 +1,32 @@
+/* Custom Stylesheet */
+html { height: 100%; }
+body {
+    height:100%;
+    min-height: 100%;
+    background: #000000;
+    color: #FFFFFF;
+    position:relative;
+}
+header {
+    /*height:50px;*/
+    width:100%;
+    top:0px;
+    left:0px;
+    background: #CCCCCC;
+    position:absolute;
+}
+footer {
+    /*height:50px;*/
+    width:100%;
+    bottom:0px;
+    left:0px;
+    background: #CCCCCC;
+    position:absolute;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
