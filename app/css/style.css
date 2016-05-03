@@ -1,22 +1,26 @@
 /* Custom Stylesheet */
+@font-face {
+    font-family: JaneAust;
+    src: url("../fonts/jane/JaneAust.ttf");
+}
+* {
+  box-sizing: border-box;
+}
 html { height: 100%; }
 body {
     height:100%;
     min-height: 100%;
-    background: #000000;
+    background: #FFFFFF;
     color: #FFFFFF;
     position:relative;
+    overflow: hidden;
 }
-header {
-    /*height:50px;*/
-    width:100%;
-    top:0px;
-    left:0px;
-    background: #CCCCCC;
-    position:absolute;
+nav {
+    border-bottom: 2px red solid;
 }
-footer {
-    /*height:50px;*/
+
+#footer {
+    height:50px;
     width:100%;
     bottom:0px;
     left:0px;
@@ -24,9 +28,50 @@ footer {
     position:absolute;
 }
 
+#content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height:100%;
+    /*padding: 50px 0*/
+    overflow: hidden;
+}
+
+#content #scrollableContent {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+#content #scrollableContent #paddingContent {
+    padding: 20px;
+}
+
+.nav-item{
+  margin-top: -2px;
+}
+.border-blue.active,.border-blue:hover{
+  border-bottom: 2px blue solid;
+}
+.border-purple.active,.border-purple:hover{
+  border-bottom: 2px purple solid;
+}
+.border-orange.active,.border-orange:hover{
+  border-bottom: 2px orange solid;
+}
+.border-green.active,.border-green:hover{
+  border-bottom: 2px green solid;
+}
+
+#logo-container {
+  font-family: JaneAust;
+}
 .icon-block {
   padding: 0 15px;
 }
 .icon-block .material-icons {
 	font-size: inherit;
+}
+.container{
+  color:black;
 }
