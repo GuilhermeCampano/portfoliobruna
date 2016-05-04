@@ -47,6 +47,16 @@ nav {
     padding: 20px;
 }
 
+#content.page-home{
+    background-image: url('../img/background-home.png');
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   background-color: #464646;
+}
+
+
 .nav-item{
   margin-top: -2px;
 }
@@ -74,4 +84,21 @@ nav {
 }
 .container{
   color:black;
+}
+
+p.narrow{
+  margin: -20px 0;
+}
+.fancy-font{
+  font-size: 7em;
+}
+.fancy-font-small{
+  font-size: 1.5em;
+}
+.fancy-font-pink{
+  color: #d02e4d;
+  font-size: 8em;
+}
+.valign-home {
+  height: 50vh;
 }
