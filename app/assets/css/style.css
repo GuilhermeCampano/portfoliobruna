@@ -104,10 +104,36 @@ p.super-narrow{
   color: #d02e4d;
   font-size: 10rem;
 }
-.valign-home {
+.vertical-align-content {
   height: 80vh;
 }
 
 .valign-footer {
   height: 10vh;
 }
+
+.horizontal-center-aligin {
+  margin: 0 auto;
+}
+
+.method-vertical-size{
+  height: 100%;
+}
+/*
+.method-schema {
+  background-image: url("../img/method-horizontal.jpg");
+  background-size: 720px auto;
+  background-repeat: no-repeat;
+  width: 786px;
+  height: 476px;
+}
+
+@media (max-width: 600px) {
+  .method-schema {
+    background-image: url("../img/method-vertical.jpg");
+    background-size: 600px auto;
+    background-repeat: no-repeat;
+    width: 414px;
+    height: 876px;
+  }
+}*/
