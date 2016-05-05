@@ -14,9 +14,16 @@ body {
     position:relative;
     overflow: hidden;
     color:#111111;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 nav {
     border-bottom: 3px #D02E4D solid;
+}
+
+#main {
+  flex: 1 0 auto;
 }
 
 #footer {
@@ -29,6 +36,7 @@ nav {
 }
 #footer .container{
     color:white;
+    overflow: hidden;
 }
 #content {
     -webkit-box-sizing: border-box;
@@ -94,6 +102,7 @@ p.super-narrow{
   line-height: 2rem;
 }
 
+
 .fancy-font{
   font-size: 10rem;
 }
@@ -104,6 +113,21 @@ p.super-narrow{
   color: #d02e4d;
   font-size: 10rem;
 }
+
+@media (max-width: 600px) {
+  .fancy-font{
+    font-size: 7rem;
+  }
+  .fancy-font-small{
+    font-size: 1.5rem;
+  }
+  .fancy-font-pink{
+    color: #d02e4d;
+    font-size: 7rem;
+  }
+}
+
+
 .vertical-align-content {
   height: 80vh;
 }
@@ -119,21 +143,3 @@ p.super-narrow{
 .method-vertical-size{
   height: 100%;
 }
-/*
-.method-schema {
-  background-image: url("../img/method-horizontal.jpg");
-  background-size: 720px auto;
-  background-repeat: no-repeat;
-  width: 786px;
-  height: 476px;
-}
-
-@media (max-width: 600px) {
-  .method-schema {
-    background-image: url("../img/method-vertical.jpg");
-    background-size: 600px auto;
-    background-repeat: no-repeat;
-    width: 414px;
-    height: 876px;
-  }
-}*/
