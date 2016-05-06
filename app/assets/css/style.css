@@ -143,3 +143,22 @@ p.super-narrow{
 .method-vertical-size{
   height: 100%;
 }
+
+.card .title{
+  margin:0px;
+  padding: 0 5px;
+  font-size: 2rem;
+  color: grey;
+}
+.card .tags{
+  margin:0px;
+  padding: 0 5px;
+}
+.card.small{
+  height: 200px;
+}
+.card-image{
+  max-height: 60%;
+  overflow: hidden;
+  min-height: 100px;
+}
