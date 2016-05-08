@@ -12,6 +12,8 @@ html {
   color: black;
 }
 
+/*------GENERAL -----*/
+
 /*--------------
 SECTIONS
 ---------------*/
@@ -22,6 +24,62 @@ SECTIONS
 .cd-section:nth-child(odd)  > div {
   background:#F8F7F7
 }
+
+/*---HOME---*/
+#home-menu {
+  font-size: 1.5rem;
+}
+#home-menu .row{
+  padding-left: 10%;
+  padding-top: 15vh;
+}
+@media only screen and (max-width: 600px) {
+  #home-menu .row{
+    padding-left: 5%;
+    padding-top: 10vh;
+  }
+}
 #home-menu > div{
   background-image: url("../img/background.jpg");
+  background-position: center;
+}
+.main-menu{
+  font-family: "Roboto Regular", sans-serif;
+  font-weight: 600;
+}
+.contact {
+  font-size: 1.6rem;
+
+}
+.menu-items {
+  white-space: nowrap;
+  font-size: 2rem
+}
+.menu-items a {
+  color: black;
+}
+.menu-items a:hover span, .menu-items a.active span  {
+    text-decoration: none;
+    border-bottom: 5px solid #5c4c93;
+}
+.uxdesign{
+  font-weight: bold;
+  font-size: 9rem;
+}
+.uxdesign span:nth-child(1){
+  font-size: 12rem;
+  color:#4D0F8C;
+}
+cite {
+  font-size: 2.5rem;
+}
+cite.phrase{
+  padding-left: 1.5%;
+  text-align: center;
+  font-size: 2.5rem;
+}
+cite.author{
+  padding-left: 29%;
+  font-size: 2rem;
+  text-align: left;
 }
