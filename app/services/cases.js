@@ -12,7 +12,7 @@ $(function(){
     template += '</div>';
     template += '</div>';
     template += '</div>';
-    $("#cases").append(template);
+    $("#cases-content").append(template);
   }
   $.ajax({
     url: "app/services/cases.json",

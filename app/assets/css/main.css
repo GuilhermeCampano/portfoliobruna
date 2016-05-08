@@ -1,0 +1,27 @@
+@font-face {
+    font-family: JaneAust;
+    src: url("../fonts/jane/JaneAust.ttf");
+}
+* {
+    box-sizing: border-box;
+}
+html {
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: black;
+}
+
+/*--------------
+SECTIONS
+---------------*/
+.cd-section:nth-child(even)  > div {
+  background:white
+}
+
+.cd-section:nth-child(odd)  > div {
+  background:#F8F7F7
+}
+#home-menu > div{
+  background-image: url("../img/background.jpg");
+}
