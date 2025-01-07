@@ -1,24 +1,24 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import NavigationButton from './NavigationButton.astro';
 ---
 
 <header>
 	<nav>
-		<!-- <h2><a href="/">{SITE_TITLE}</a></h2> -->
 		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/about">About Me</HeaderLink>
-			<HeaderLink href="/education">Education</HeaderLink>
-			<HeaderLink href="/works">My Work</HeaderLink>
+			<NavigationButton href="/" variant='neutral' text="Home" />
+			<NavigationButton href="/about" variant='primary' text="About Me" />
+			<NavigationButton href="/education" variant='secondary' text="Education" />
+			<NavigationButton href="/works" variant='tertiary' text="My Work" />
 		</div>
 	</nav>
 </header>
 <style>
 	header {
-		margin: 0;
-		padding: 0 1em;
+		margin: auto;
 		background: transparent;
+		width: 100%;
+		max-width: var(--container-max);
+		padding: var(--spacing-md)
 	}
 	h2 {
 		margin: 0;
@@ -30,6 +30,7 @@ import { SITE_TITLE } from '../consts';
 		text-decoration: none;
 	}
 	nav {
+		padding-top: var(--spacing-md);
 		display: flex;
 		justify-content: end;
 	}

@@ -1,0 +1,82 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'a'> {
+  text: string;
+  variant?: 'primary' | 'secondary' | 'tertiary' | 'neutral';
+}
+const {
+  href,
+  text,
+  variant = 'primary',
+  class: className,
+  ...props
+} = Astro.props;
+
+const pathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, '');
+const subpath = pathname.match(/[^\/]+/g);
+const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
+---
+
+<a
+  role="button"
+  href={href}
+  class:list={[className, 'navigation-button', variant, { active: isActive }]}
+>
+  {text}
+</a>
+
+<style>
+  .navigation-button {
+    display: inline-flex;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: var(--border-md);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+    transition: var(--transition-normal) ease;
+    color: var(--text-color);
+  }
+
+  .navigation-button:hover {
+    color: var(--color-black);
+    text-decoration: underline;
+    text-underline-offset: var(--spacing-xs);
+  }
+
+  .navigation-button.active {
+    box-shadow: var(--shadow-inset);
+  }
+
+  .neutral {
+    background-color: var(--color-neutral);
+  }
+  .neutral.active {
+    background-color: var(--color-neutral-light);
+  }
+
+  .primary {
+    background-color: var(--color-primary);
+  }
+  .primary.active {
+    background-color: var(--color-primary-light);
+    border-color: var(--color-primary-dark);
+  }
+
+  .secondary {
+    background-color: var(--color-secondary);
+  }
+  .secondary.active {
+    background-color: var(--color-secondary-light);
+    border-color: var(--color-secondary-dark);
+  }
+
+  .tertiary {
+    background-color: var(--color-tertiary);
+  }
+  .tertiary.active {
+    background-color: var(--color-tertiary-light);
+    border-color: var(--color-tertiary-dark);
+  }
+</style>

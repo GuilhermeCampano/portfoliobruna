@@ -6,13 +6,15 @@
   /* Main Colors */
   --color-primary-light: hsl(7, 82%, 85%);
   --color-primary: hsl(7, 82%, 77%);
-  --color-primary-dark: hsl(7, 82%, 67%);
+  --color-primary-dark: hsl(8, 40%, 43%);
 
-  --color-light: hsl(74, 29%, 83%);
+  --color-secondary-light: hsl(140, 31%, 90%);
   --color-secondary: hsl(139, 31%, 71%);
+  --color-secondary-dark: hsl(139, 16%, 49%);
 
-  --color-tetiary-light: hsl(344, 23%, 82%);
-  --color-tetiary: hsl(277, 27%, 69%); 
+  --color-tertiary-light: hsl(277, 27%, 90%);
+  --color-tertiary: hsl(277, 27%, 69%);
+  --color-tertiary-dark: hsl(277, 36%, 34%);
 
   --color-success: hsl(134, 61%, 41%);
   --color-danger: hsl(354, 70%, 54%);
@@ -24,14 +26,15 @@
   --color-neutral: hsl(45, 90%, 73%);
 
   --color-black: hsl(0, 0%, 0%);
-  --color-white: hsl(0, 0%, 100%); 
+  --color-white: hsl(0, 0%, 100%);
   --color-gray-light: hsl(210, 17%, 98%);
   --color-gray: hsl(210, 16%, 93%);
   --color-gray-dark: hsl(210, 10%, 23%);
+  --text-color: hsl(0, 0%, 0%);
 
   /* Typography */
   --font-family: 'Atkinson', sans-serif;
-  
+
   --font-size-xs: 0.75rem; /* 12px */
   --font-size-sm: 0.875rem; /* 14px */
   --font-size-md: 1rem; /* 16px */
@@ -39,6 +42,10 @@
   --font-size-xl: 1.5rem; /* 24px */
   --font-size-2xl: 2rem; /* 32px */
   --font-size-3xl: 3rem; /* 48px */
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
 
   /* Spacing */
   --spacing-xs: 0.25rem; /* 4px */
@@ -55,10 +62,18 @@
   --radius-lg: 1rem;
   --radius-full: 100%;
 
+  /** Border Style */
+  --boder-sm: 1px solid var(--color-black);
+  --border-md: 2px solid var(--color-black);
+  --border-lg: 3px solid var(--color-black);
+
   /* Shadows */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+  /**button effect pressed */
+  --shadow-inset: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
 
   /* Z-index */
   --z-dropdown: 1000;

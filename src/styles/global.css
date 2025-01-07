@@ -15,10 +15,9 @@ body {
 	line-height: 1.7;
 }
 main {
-	width: var(--container-max);
-	max-width: calc(100% - 2em);
+	max-width: var(--container-max);
 	margin: auto;
-	padding: 3em 1em;
+	padding: var(--spacing-md)
 }
 h1,
 h2,
