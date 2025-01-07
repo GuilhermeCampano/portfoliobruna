@@ -1,24 +1,20 @@
 :root {
   /*Deprecated Variables*/
-  --accent: #2337ff;
-  --accent-dark: #000d8a;
-  --black: 15, 18, 25;
-  --gray: 96, 115, 159;
-  --gray-light: 229, 233, 240;
-  --gray-dark: 34, 41, 57;
-  --gray-gradient: rgba(var(--gray-light), 50%), #fff;
   --box-shadow: 0 2px 6px rgba(var(--gray), 25%),
     0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%);
 
   /* Main Colors */
   --color-primary-light: hsl(7, 82%, 85%);
   --color-primary: hsl(7, 82%, 77%);
+  --color-primary-dark: hsl(8, 40%, 43%);
 
-  --color-light: hsl(74, 29%, 83%);
+  --color-secondary-light: hsl(140, 31%, 90%);
   --color-secondary: hsl(139, 31%, 71%);
+  --color-secondary-dark: hsl(139, 16%, 49%);
 
-  --color-tetiary-light: hsl(344, 23%, 82%);
-  --color-tetiary: hsl(277, 27%, 69%); 
+  --color-tertiary-light: hsl(277, 27%, 90%);
+  --color-tertiary: hsl(277, 27%, 69%);
+  --color-tertiary-dark: hsl(277, 36%, 34%);
 
   --color-success: hsl(134, 61%, 41%);
   --color-danger: hsl(354, 70%, 54%);
@@ -30,20 +26,26 @@
   --color-neutral: hsl(45, 90%, 73%);
 
   --color-black: hsl(0, 0%, 0%);
-  --color-white: hsl(0, 0%, 100%); 
+  --color-white: hsl(0, 0%, 100%);
   --color-gray-light: hsl(210, 17%, 98%);
   --color-gray: hsl(210, 16%, 93%);
   --color-gray-dark: hsl(210, 10%, 23%);
+  --text-color: hsl(0, 0%, 0%);
 
   /* Typography */
   --font-family: 'Atkinson', sans-serif;
-  
+
   --font-size-xs: 0.75rem; /* 12px */
   --font-size-sm: 0.875rem; /* 14px */
-  --font-size-base: 1rem; /* 16px */
-  --font-size-lg: 1.125rem; /* 18px */
-  --font-size-xl: 1.25rem; /* 20px */
-  --font-size-2xl: 1.5rem; /* 24px */
+  --font-size-md: 1rem; /* 16px */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-xl: 1.5rem; /* 24px */
+  --font-size-2xl: 2rem; /* 32px */
+  --font-size-3xl: 3rem; /* 48px */
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
 
   /* Spacing */
   --spacing-xs: 0.25rem; /* 4px */
@@ -52,17 +54,26 @@
   --spacing-lg: 1.5rem; /* 24px */
   --spacing-xl: 2rem; /* 32px */
   --spacing-2xl: 3rem; /* 48px */
+  --spacing-3xl: 4rem; /* 64px */
 
   /* Border Radius */
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
   --radius-lg: 1rem;
-  --radius-full: 9999px;
+  --radius-full: 100%;
+
+  /** Border Style */
+  --boder-sm: 1px solid var(--color-black);
+  --border-md: 2px solid var(--color-black);
+  --border-lg: 3px solid var(--color-black);
 
   /* Shadows */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+  /**button effect pressed */
+  --shadow-inset: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
 
   /* Z-index */
   --z-dropdown: 1000;
